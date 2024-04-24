@@ -31,6 +31,13 @@ _mautrix_signal_build_venv() {
         "$install_dir/src/mautrix-signal.tar.gz[metrics,e2be,formattednumbers,qrlink,stickers]"
 }
 
+get_synapse_db_name() {
+	# Parameters: synapse instance identifier
+	# Returns: database name
+	ynh_app_setting_get --app="$1" --key=db_name
+}
+
+
 #=================================================
 # EXPERIMENTAL HELPERS
 #=================================================
