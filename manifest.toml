@@ -79,8 +79,10 @@ ram.runtime = "50M" # FIXME: replace with an **estimate** minimum ram requiremen
     sha256 = "225e36637daccf5f01138b7e29e3b2195bced7b13a290d163e34fe1f5d4a5d2a"
 
     [resources.system_user]
+    home = "/opt/yunohost/__APP__"
 
     [resources.install_dir]
+    dir = "/opt/yunohost/__APP__"
 
     [resources.permissions]
 
